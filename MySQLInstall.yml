@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- host: all
   tasks:
         - name: Install Python
           yum: name=wget state=installed
