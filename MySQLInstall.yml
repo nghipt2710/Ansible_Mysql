@@ -4,9 +4,9 @@
         - name: Install Python
           yum: name=wget state=installed
         - name: Download lib
-          get_url: url=https://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm dest=/home/nghipt7/mysql-community-release-el7-5.noarch.rpm
+          get_url: url=https://repo.mysql.com/mysql-community-release-el7-5.noarch.rpm dest=/home/test/mysql-community-release-el7-5.noarch.rpm
         - name: Install rpm
-          yum: name=/home/nghipt7/mysql-community-release-el7-5.noarch.rpm state=present
+          yum: name=/home/test/mysql-community-release-el7-5.noarch.rpm state=present
         - name: Update Package
           yum: name=* state=latest
         - name: Install mySQL 
