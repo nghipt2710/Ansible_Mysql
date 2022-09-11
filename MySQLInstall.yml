@@ -1,5 +1,6 @@
 ---
-  - tasks:
+- hosts: database
+  tasks:
         - name: Install Python
           yum: name=wget state=installed
         - name: Download lib
